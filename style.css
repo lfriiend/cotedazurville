@@ -1,0 +1,267 @@
+/* general */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --brand-darkgray: rgb(180, 180, 180);
+    --brand-lightgray: rgb(210, 210, 210);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hmtl,
+body {
+    width: 100%;
+    height: auto;
+
+    font-size: 1.6rem;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container {
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header {
+    background-color: var(--brand-darkgray);
+    padding: 1rem 2%;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.logo-1 {
+    width: 13rem;
+    height: 9rem;
+}
+
+.logo-2 {
+    width: 16rem;
+    height: 9rem;
+}
+
+/* SECTION FORM */
+
+section .cover-form {
+    width: 100%;
+}
+
+section .bg {
+    height: 55rem;
+    background-position: center;
+    background-image: url('./images/bg-form.jpg');
+    background-size: cover;
+}
+
+section.cover-form .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section .form-container {
+    width: 40rem;
+    height: 105%;
+    position: relative;
+    top: -2%;
+    margin-right: 4rem;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
+
+}
+
+section .form-container h2 {
+    padding: 2rem 1.5rem;
+    background-color: var(--brand-lightgray);
+
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+
+}
+
+section .form-container form {
+    margin-top: .8rem;
+    padding: 1.5rem;
+}
+
+section .form-container form p {
+    color: #525252;
+    font-size: 1.6rem;
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 4rem;
+}
+
+.form-container form input {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033c50;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 3rem;
+    height: 6rem;
+    border: 0;
+}
+
+#submit:hover {
+    box-shadow: 1px 2px 0px 2px black;
+    background-color: #29526d;
+}
+
+.form-wraper:last-child {
+    margin-top: 2rem;
+}
+
+/*SECTION CHAMADA */
+
+section.chamada {
+    padding: 4rem 0;
+    background-color: #29526d;
+    max-width: 128rem;
+    margin-inline: auto;
+    padding: 5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section.chamada h3,
+h1 {
+    width: 100%;
+    max-width: 60rem;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* ARROW */
+
+.arrow {
+    display: absolute;
+    position: absolute;
+    background-image: url('./images/arrow.png');
+    background-size: 100%;
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    margin-top: -32px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+/* SECTION MOSAICO */
+
+.flex-mosaico {
+    display: flex;
+    background-color: #4683AB;
+}
+
+.item-mosaico {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 30rem;
+}
+
+.flex-mosaico p {
+    width: 40%;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    margin-block: auto;
+}
+
+/*SECTION FINAL */
+
+section.final .container {
+    background-color: #29526d;
+
+}
+
+section.final .container h1 {
+    width: 100%;
+    max-width: 100rem;
+    text-align: center;
+    padding: 2rem;
+
+    margin-inline: auto;
+}
+
+
+
+/* FOOTER */
+
+footer img {
+    width: 13rem;
+    height: 9rem;
+}
+
+footer .container {
+    background-color: var(--brand-lightgray);
+    text-align: center;
+
+    padding-bottom: 2rem;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 510px) {
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex-mosaico {
+        display: block;
+    }
+
+    .flex-mosaico p {
+        width: 100%;
+
+    }
+
+    .item-mosaico {
+        width: 100%;
+    }
+
+}
